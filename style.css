@@ -1,0 +1,254 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-image: url('/images/bg-desktop.svg');
+  background-color: hsl(257, 40%, 49%);
+  display: grid;
+  grid-template-areas: 'container container container container container container container container';
+}
+.grid-container{
+  margin:0 auto 0 auto;
+  grid-area: container;
+  display: grid;
+  grid-template-areas: 'header header header header header header header header'
+  'main main main main main main main main'
+  'footer footer footer footer footer footer footer footer';
+}
+header{
+  grid-area: header;
+}
+.logo{
+  width: 200px;
+  margin: 50px 50px 20px 20px;
+}
+.main{
+  margin-top: 50px;
+  grid-area: main;
+  display: grid;
+  justify-items: space-between;
+  grid-template-areas: 'illustration illustration illustration illustration info-container info-container info-container info-container';
+}
+.illustration{
+  grid-area: illustration;
+}
+.illustration img{
+  margin-left: 20px;
+}
+.info-container{
+  margin-left: 20px;
+  grid-area: info-container;
+  width: 500px;
+}
+.info-container h1{
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  color: white;
+  font-size: 40px;
+}
+.info-container p{
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  color: white;
+  font-size: 15px;
+  line-height: 1.5;
+}
+.info-container button{
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  padding: 15px 20px;
+  outline: none;
+  border: none;
+  border-radius: 50px;
+  width: 200px;
+  box-shadow: 0 1px 6px 1px black;
+  background-color: white;
+  color: hsl(257, 40%, 49%);
+  font-size: 15px;
+  margin-top: 10px;
+}
+.info-container button:focus{
+  background-color: hsl(300, 69%, 71%);
+  color: white;
+  outline: none;
+  border: none;
+}
+.info-container button:hover{
+  background-color: hsl(300, 69%, 71%);
+  color: white;
+  outline: none;
+  border: none;
+}
+footer{
+  grid-area: footer;
+  display: grid;
+  align-items: center;
+  grid-template-areas: 'attribution attribution attribution attribution attribution attribution attribution icons';
+}
+.icons{
+  grid-area: icons;
+  display: flex;
+  margin-right: 20%;
+}
+.fbook, .twit, .insta {
+  margin: 10px;
+  color: white;
+  padding: 10px;
+  border: 2px solid white;
+  border-radius: 100%;
+}
+.fbook:hover{
+  color: hsl(300, 88%, 52%);
+  border: 2px solid hsl(300, 88%, 52%);
+}
+.twit:hover{
+  color: hsl(300, 88%, 52%);
+  border: 2px solid hsl(300, 88%, 52%);
+}
+.insta:hover{
+  color: hsl(300, 88%, 52%);
+  border: 2px solid hsl(300, 88%, 52%);
+}
+.attribution {
+  color: white;
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  text-decoration: none;
+  color: white;
+  grid-area: attribution;
+}
+@media (max-width: 800px) {
+  body{
+    overflow: auto;
+    justify-items: center;
+    align-content: center;
+    text-align: center;
+  }
+  .logo{
+    width: 200px;
+    margin: 50px 50px 20px 20px;
+  }
+  .main{
+    display: grid;
+    justify-items: center;
+    align-content: center;
+    grid-template-areas: 'illustration illustration illustration illustration illustration illustration illustration illustration'
+    'info-cont info-cont info-cont info-cont info-cont info-cont info-cont info-cont';
+  }
+  .illustration{
+    justify-items: center;
+    align-content: center;
+    display: grid;
+  }
+  .illustration img{
+    grid-area: illustration;
+    margin-left: 20px;
+    width: 400px;
+  }
+  .info-container{
+    justify-items: center;
+    align-content: center;
+    text-align: center;
+    grid-area: info-cont;
+    margin-left: 20px;
+    width: 400px;
+  }
+  .info-container h1{
+    font-size: 30px;
+  }
+  .info-container p{
+    font-size: 10px;
+  }
+  .info-container button{
+    padding: 10px 15px;
+    font-size: 10px;
+  }
+  footer{
+    justify-items: center;
+    align-content: center;
+    grid-template-areas: 'attribution attribution attribution attribution attribution attribution attribution attribution '
+    'icons icons icons icons icons icons icons icons';
+  }
+  .grid-container{
+    justify-items: center;
+    align-content: center;
+    /* margin:0 auto 0 auto; */
+    grid-area: container;
+    display: grid;
+    grid-template-areas: 'header header header header header header header header'
+    'main main main main main main main main'
+    'footer footer footer footer footer footer footer footer';
+  }
+}
+@media (max-width: 400px) {
+  body{
+    overflow: auto;
+    justify-items: center;
+    align-content: center;
+    text-align: center;
+  }
+  .logo{
+    width: 200px;
+    margin: 50px 50px 20px 20px;
+  }
+  .main{
+    display: grid;
+    justify-items: center;
+    align-content: center;
+    grid-template-areas: 'illustration illustration illustration illustration illustration illustration illustration illustration'
+    'info-cont info-cont info-cont info-cont info-cont info-cont info-cont info-cont';
+  }
+  .illustration{
+    justify-items: center;
+    align-content: center;
+    display: grid;
+  }
+  .illustration img{
+    grid-area: illustration;
+    width: 300px;
+  }
+  .info-container{
+    justify-items: center;
+    align-content: center;
+    text-align: center;
+    grid-area: info-cont;
+    width: 300px;
+  }
+  .info-container h1{
+    font-size: 30px;
+  }
+  .info-container p{
+    font-size: 10px;
+  }
+  .info-container button{
+    padding: 10px 15px;
+    font-size: 10px;
+  }
+  footer{
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    grid-template-areas: 'attribution attribution attribution attribution attribution attribution attribution attribution '
+    'icons icons icons icons icons icons icons icons';
+  }
+  .grid-container{
+    justify-items: center;
+    align-content: center;
+    grid-area: container;
+    display: grid;
+    grid-template-areas: 'header header header header header header header header'
+    'main main main main main main main main'
+    'footer footer footer footer footer footer footer footer';
+  }
+  .attribution{
+    margin-left: 50px;
+    margin-right: auto;
+  }
+  .icons{
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
