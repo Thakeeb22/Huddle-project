@@ -34,8 +34,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Add solution URL here](https://thakeeb22.github.io/Huddle-project/)
+- Live Site URL: [Add live site URL here](https://thakeeb22.github.io/Huddle-project/)
 
 ## My process
 
@@ -65,6 +65,6 @@ I want to improve using grid to build a complete responsive website
 
 ## Author
 
-- Website - [Muhammad Thakeeb Muhammad](https://www.your-site.com)
+- Website - [Muhammad Thakeeb Muhammad](https://thakeeb22.github.io/Huddle-project/)
 - Frontend Mentor - [@Thakeeb22](https://www.frontendmentor.io/profile/Thakeeb22)
 - Twitter - [@MuhammadThakeeb](https://www.twitter.com/MuhammadThakeeb)
