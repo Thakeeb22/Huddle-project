@@ -16,7 +16,6 @@ This is a solution to the [Huddle landing page with single introductory section 
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
 
@@ -65,6 +64,6 @@ I want to improve using grid to build a complete responsive website
 
 ## Author
 
-- Website - [Muhammad Thakeeb Muhammad](https://thakeeb22.github.io/Huddle-project/)
+- Website - [Muhammad Thakeeb Muhammad](https://thakeeb22.github.io/mt-tech-designs/)
 - Frontend Mentor - [@Thakeeb22](https://www.frontendmentor.io/profile/Thakeeb22)
 - Twitter - [@MuhammadThakeeb](https://www.twitter.com/MuhammadThakeeb)
